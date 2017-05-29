@@ -1,0 +1,30 @@
+{
+  "name": "number_convert",
+  "version": "1.0.8",
+  "description": "國字數字大寫轉換 
+  "main": "number_convert.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {},
+  "keywords": [
+    "number",
+    "text",
+    "tw",
+    "taiwan",
+  ],
+  "homepage": "https://github.com/huangyushing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangyushing"
+  },
+  "author": {
+    "name": "huang.yu.shing",
+    "email": "huang.yu.shing@gmail.com"
+  },
+  "license": "MIT"
+}
