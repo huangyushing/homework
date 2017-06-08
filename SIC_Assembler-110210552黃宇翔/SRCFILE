@@ -1,0 +1,34 @@
+SIC      START   2000               
+FIRST    LDA     AA                 load AA into A
+         ADD     BB                 A add BB store into A
+         STA     CC                 store A into CC 
+.
+         SUB     DD,X               A subtract DD store into A
+         STA     EE                 store A into EE 
+.
+         MUL     AA                 A multiplied AA store into A
+         STA     FF                 store A into FF 
+.
+         LDA     EE                 load EE into A
+         DIV     AA                 A divided  AA store into A
+         STA     GG                 store A into GG
+.
+         MUL     THREE              A multiplied THREE store into A
+         STA     HH                 store A into HH
+.
+         LDA     GG                 load GG into A
+         DIV     SIX                A divided SIX store into A
+         STA     II                 store A into II
+.
+AA       WORD    2
+BB       WORD    7
+DD       WORD    3
+CC       RESW    1
+EE       RESW    1
+FF       RESW    1
+GG       RESW    1
+HH       RESW    1
+II       RESW    1
+THREE    WORD    3
+SIX      WORD    6
+         END     FIRST

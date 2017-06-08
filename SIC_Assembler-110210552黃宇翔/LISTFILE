@@ -1,0 +1,53 @@
+
+Line LOCCTR  Label  Intstruction Operand               Comment                    Object Code
+---------------------------------------------------------------------------------------------
+000   2000   SIC      START      2000                                              
+001   2000   FIRST    LDA        AA                 load AA into A                  00202D
+002   2003            ADD        BB                 A add BB store into A           182030
+003   2006            STA        CC                 store A into CC                 0C2036
+004          .
+005   2009            SUB        DD,X               A subtract DD store into A      1CA033
+006   200C            STA        EE                 store A into EE                 0C2039
+007          .
+008   200F            MUL        AA                 A multiplied AA store into A    20202D
+009   2012            STA        FF                 store A into FF                 0C203C
+010          .
+011   2015            LDA        EE                 load EE into A                  002039
+012   2018            DIV        AA                 A divided  AA store into A      24202D
+013   201B            STA        GG                 store A into GG                 0C203F
+014          .
+015   201E            MUL        THREE              A multiplied THREE store into A 202048
+016   2021            STA        HH                 store A into HH                 0C2042
+017          .
+018   2024            LDA        GG                 load GG into A                  00203F
+019   2027            DIV        SIX                A divided SIX store into A      24204B
+020   202A            STA        II                 store A into II                 0C2045
+021          .
+022   202D   AA       WORD       2                                                  000002
+023   2030   BB       WORD       7                                                  000007
+024   2033   DD       WORD       3                                                  000003
+025   2036   CC       RESW       1                                                 
+026   2039   EE       RESW       1                                                 
+027   203C   FF       RESW       1                                                 
+028   203F   GG       RESW       1                                                 
+029   2042   HH       RESW       1                                                 
+030   2045   II       RESW       1                                                 
+031   2048   THREE    WORD       3                                                  000003
+032   204B   SIX      WORD       6                                                  000006
+033   204E            END        FIRST                                              002000
+
+----Symbol Table-----------------------------------------------------------------------------
+
+2000 SIC     
+2000 FIRST   
+202D AA      
+2030 BB      
+2033 DD      
+2036 CC      
+2039 EE      
+203C FF      
+203F GG      
+2042 HH      
+2045 II      
+2048 THREE   
+204B SIX     
